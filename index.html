@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO List</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div>
+      <h1>Todo List</h1>
+      <p>Manage And Search Your Pending Tasks</p>
+    </div>
+    <div>
+      <input
+        id="search-bar"
+        type="text"
+        placeholder="Search task"
+        autocomplete="chrome-off"
+        class="search"
+      />
+      <span id="clear-input">
+        <i class="fa-regular fa-circle-xmark icon"></i>
+      </span>
+    </div>
+    <div>
+      <p id="no-data"></p>
+
+      <div id="todos" class="todo-container"></div>
+      <div>
+        <input
+          type="text"
+          placeholder="add task"
+          id="add-input"
+          class="input-add"
+        />
+        <button id="add-btn">add</button>
+      </div>
+    </div>
+    <div class="pen-task">
+      <p>you have <span id="rem-task">0</span> pending tasks.</p>
+      <button class="clear-btn" id="clear-all-btn">clear all</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
