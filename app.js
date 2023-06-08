@@ -8,7 +8,6 @@ const searchBar = document.getElementById("search-bar");
 
 const clearInput = document.getElementById("clear-input");
 const clearAllBtn = document.getElementById("clear-all-btn");
-const noData = document.getElementById("no-data");
 
 let render = (array) => {
   todos.innerHTML = "";
@@ -24,7 +23,7 @@ let render = (array) => {
       todos.innerHTML += list;
     }
   } else {
-    noData.innerText = "No Data Found";
+    todos.innerHTML = "<p><span class='no-data'>No Data Found</span></p>";
   }
 
   for (let obj of array) {
